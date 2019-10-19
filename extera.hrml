@@ -1,0 +1,36 @@
+ .anu {
+        
+        background: green;
+        padding: 10px;
+        margin: 10px soild;
+        border-radius: 10px;
+        list-style:none;
+       }
+    li:first-child {
+        background: green;
+        color:3fff;
+    }
+    li:nth-child(even){
+        background: yellowgreen;
+        color:red;
+
+    }
+    li:nth-child(odd){
+        background: blue;
+    }
+       
+
+       var odd= document.querySelectorAll('li:nth-child(odd)');
+var even = document.querySelectorAll('li:nth-child(even)');
+
+
+odd.forEach(x =>{
+    x.classList.add('odd');
+    x.innerHTML='odd here';
+});
+
+even.forEach(y =>{
+    y.classList.even('even');
+    y.innerHTML='even here';
+
+});
